@@ -1,3 +1,4 @@
+import { Exclude } from 'class-transformer';
 import * as Joi from 'joi';
 
 export const createCatSchema = Joi.object({
@@ -10,5 +11,6 @@ export interface Cat {
   // This is an interface. It is a contract that defines the properties and their types that an object must have.
   name: string;
   age: number;
+
   breed: string;
 }

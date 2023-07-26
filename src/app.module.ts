@@ -19,6 +19,8 @@ import { ConfigModule } from '@nestjs/config';
 import { BookModule } from './DB/book/book.module';
 // import e from 'express';
 // import { env } from 'process';
+import { BirdModule } from './bird/bird.module';
+import { AuthModule } from './Authentication/auth/auth.module';
 
 @Module({
   imports: [
@@ -28,6 +30,8 @@ import { BookModule } from './DB/book/book.module';
       envFilePath: './.development.env',
     }),
     BookModule,
+    BirdModule,
+    AuthModule,
   ],
   controllers: [AppController, HumansController],
   providers: [AppService, HumansService],
