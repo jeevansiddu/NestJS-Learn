@@ -21,6 +21,7 @@ import { BookModule } from './DB/book/book.module';
 // import { env } from 'process';
 import { BirdModule } from './bird/bird.module';
 import { AuthModule } from './Authentication/auth/auth.module';
+import { PassportAuthModule } from './Authentication/passport/passport-auth/passport-auth.module';
 
 @Module({
   imports: [
@@ -32,6 +33,7 @@ import { AuthModule } from './Authentication/auth/auth.module';
     BookModule,
     BirdModule,
     AuthModule,
+    PassportAuthModule,
   ],
   controllers: [AppController, HumansController],
   providers: [AppService, HumansService],

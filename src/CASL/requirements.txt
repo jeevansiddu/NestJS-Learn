@@ -1,0 +1,8 @@
+Now let's review and refine our requirements for this example:
+
+Admins can manage (create/read/update/delete) all entities
+Users have read-only access to everything
+Users can update their articles (article.authorId === userId)
+Articles that are published already cannot be removed (article.isPublished === true)
+
+manage is a special keyword in CASL which represents "any" action.
